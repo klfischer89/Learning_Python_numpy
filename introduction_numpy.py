@@ -37,7 +37,11 @@ xs = np.array([ # create matrix
 # print(xs[:,0]) # access first column
 # print(xs[2,4]) # access element in thrid row and fifth column 
 
-xs[0,0] = 10 # change first element to 10
-xs[:,3] = 15 # change fourth column to 15
-xs[:,2] = np.array([101,102,103]) # change third column to array elements
-print(xs)
+# xs[0,0] = 10 # change first element to 10
+# xs[:,3] = 15 # change fourth column to 15
+# xs[:,2] = np.array([101,102,103]) # change third column to array elements
+# print(xs)
+
+print(xs.reshape(-1)) # reshape matrix to one row
+print(xs.reshape(5, 3)) # reshape with 5 rows and 3 columns
+print(xs.reshape(5, -1)) # reshape with 5 rows and 3 columns, automatically detect number of columns
