@@ -23,6 +23,7 @@ a = np.arange(1,5)[:3] # slice array to have same shape as xs
 xv = np.arange(-3, 3, 0.1)
 yv = xv ** 3 - xv ** 2 + 6
 
+# plt.scatter(xv, yv)
 # plt.plot(xv, yv)
 # plt.show()
 
