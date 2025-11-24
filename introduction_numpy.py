@@ -32,7 +32,12 @@ xs = np.array([ # create matrix
     [1, 2, 3, 4, 5], 
     [4, 5, 6, 7, 8]])
 
-print(xs.shape) # print shape of xs
-print(xs[0]) # access first row of the matrix
-print(xs[:,0]) # access first column
-print(xs[2,4]) # access element in thrid row and fifth column 
+# print(xs.shape) # print shape of xs
+# print(xs[0]) # access first row of the matrix
+# print(xs[:,0]) # access first column
+# print(xs[2,4]) # access element in thrid row and fifth column 
+
+xs[0,0] = 10 # change first element to 10
+xs[:,3] = 15 # change fourth column to 15
+xs[:,2] = np.array([101,102,103]) # change third column to array elements
+print(xs)
