@@ -45,3 +45,5 @@ xs = np.array([ # create matrix
 print(xs.reshape(-1)) # reshape matrix to one row
 print(xs.reshape(5, 3)) # reshape with 5 rows and 3 columns
 print(xs.reshape(5, -1)) # reshape with 5 rows and 3 columns, automatically detect number of columns
+print(xs.reshape(-1,1)) # reshape to multidimensional array conataining each element as array
+
