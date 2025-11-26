@@ -42,8 +42,18 @@ xs = np.array([ # create matrix
 # xs[:,2] = np.array([101,102,103]) # change third column to array elements
 # print(xs)
 
-print(xs.reshape(-1)) # reshape matrix to one row
-print(xs.reshape(5, 3)) # reshape with 5 rows and 3 columns
-print(xs.reshape(5, -1)) # reshape with 5 rows and 3 columns, automatically detect number of columns
-print(xs.reshape(-1,1)) # reshape to multidimensional array conataining each element as array
+# print(xs.reshape(-1)) # reshape matrix to one row
+# print(xs.reshape(5, 3)) # reshape with 5 rows and 3 columns
+# print(xs.reshape(5, -1)) # reshape with 5 rows and 3 columns, automatically detect number of columns
+# print(xs.reshape(-1,1)) # reshape to multidimensional array conataining each element as array
 
+print(xs.min())
+print(xs.max())
+print(xs.mean())
+
+print(xs.min(axis=0)) # minimum of columns
+print(xs.min(axis=1)) # minimun of rows
+# axis works for max, mean and so on as well
+
+print(xs.argmin()) # get position of minimum
+print(xs.argmax()) # get position of maximum
